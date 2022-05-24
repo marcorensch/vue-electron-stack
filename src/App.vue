@@ -4,9 +4,7 @@
     |
     <router-link to="/about">About</router-link>
   </nav>
-  <div class="uk-section uk-section-primary">
 
-  </div>
   <router-view/>
 </template>
 
