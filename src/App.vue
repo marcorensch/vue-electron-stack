@@ -5,7 +5,26 @@
     <router-link to="/about">About</router-link>
   </nav>
 
-  <router-view/>
+  <div class="uk-section app" uk-height-viewport="offset-top:true; offset-bottom:true;">
+    <div class="uk-container">
+      <router-view></router-view>
+    </div>
+  </div>
+
+  <div class="uk-section uk-section-secondary uk-padding-small">
+    <div class="uk-container">
+      <div class="uk-flex uk-flex-center uk-grid-small">
+        <div class="">
+          <font-awesome-icon icon="phone" class="uk-margin-small-right" />
+          <a href="https://www.google.de" target="_blank">Google External URL</a>
+        </div>
+        <div class="">
+          <font-awesome-icon icon="globe" class="uk-margin-small-right"/>
+          <a href="https://www.nx-designs.ch" target="_blank">nx-designs</a>
+        </div>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
