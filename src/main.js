@@ -7,8 +7,15 @@ import { createPinia } from 'pinia'
 // FontAwesome
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
-import {faGlobe, faPhone} from "@fortawesome/free-solid-svg-icons";
-library.add(faPhone, faGlobe);
+import {
+    faGlobe,
+    faGrip,
+    faGripLinesVertical,
+    faPhone,
+    faQuestionCircle,
+    faUsers
+} from "@fortawesome/free-solid-svg-icons";
+library.add(faPhone, faGlobe, faUsers, faQuestionCircle, faGrip, faGripLinesVertical);
 
 const pinia = createPinia()
 const app = createApp(App)
