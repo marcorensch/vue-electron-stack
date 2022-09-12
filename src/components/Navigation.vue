@@ -21,6 +21,13 @@
             <span class="uk-text-truncate">About</span></a>
         </li>
       </router-link>
+      <router-link :to="{name: 'grid'}" custom v-slot="{ href, navigate, isActive, isExactActive }">
+        <li id="dashboard-link" :class="{ 'uk-active active': isActive, 'uk-active active': isExactActive }">
+          <a :href="href" @click="navigate">
+            <font-awesome-icon icon="users" class="menu-icon"/>
+            <span class="uk-text-truncate">Grid</span></a>
+        </li>
+      </router-link>
     </ul>
 </template>
 

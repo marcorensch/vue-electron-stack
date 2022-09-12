@@ -15,7 +15,7 @@
 
 
   <div class="uk-position-relative" uk-height-viewport="offset-top:true; offset-bottom:true;">
-    <div class="uk-position-cover uk-grid">
+    <div class="uk-position-cover uk-grid uk-grid-collapse">
       <div class="sidebar uk-height-1-1 uk-overflow-auto" style="background: #202021">
         <Navigation />
         <div class="resizer uk-flex uk-flex-middle uk-flex-center">
@@ -23,7 +23,9 @@
         </div>
       </div>
       <div class="uk-width-expand uk-height-1-1 uk-overflow-auto">
-        <router-view></router-view>
+        <div class="uk-padding-small">
+          <router-view></router-view>
+        </div>
       </div>
     </div>
   </div>
