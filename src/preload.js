@@ -8,7 +8,7 @@ const ipc = {
         // From main to render.
         'receive': [],
         // From render to main and back again.
-        'sendReceive': ['getPlayers']
+        'sendReceive': ['inOut','calculate']
     }
 };
 

@@ -7,25 +7,11 @@
             <span class="uk-text-truncate">Dashboard</span></a>
         </li>
       </router-link>
-      <router-link :to="{name:'players'}" custom v-slot="{ href, navigate, isActive, isExactActive }">
-        <li id="dashboard-link" :class="{ 'uk-active active': isActive, 'uk-active active': isExactActive }">
-          <a :href="href" @click="navigate">
-            <font-awesome-icon icon="users" class="menu-icon"/>
-            <span class="uk-text-truncate">Players</span></a>
-        </li>
-      </router-link>
-      <router-link :to="{name: 'about'}" custom v-slot="{ href, navigate, isActive, isExactActive }">
-        <li id="dashboard-link" :class="{ 'uk-active active': isActive, 'uk-active active': isExactActive }">
+      <router-link :to="{name: 'ipcExample'}" custom v-slot="{ href, navigate, isActive, isExactActive }">
+        <li id="ipccomm-link" :class="{ 'uk-active active': isActive, 'uk-active active': isExactActive }">
           <a :href="href" @click="navigate">
             <font-awesome-icon icon="question-circle" class="menu-icon"/>
-            <span class="uk-text-truncate">About</span></a>
-        </li>
-      </router-link>
-      <router-link :to="{name: 'grid'}" custom v-slot="{ href, navigate, isActive, isExactActive }">
-        <li id="dashboard-link" :class="{ 'uk-active active': isActive, 'uk-active active': isExactActive }">
-          <a :href="href" @click="navigate">
-            <font-awesome-icon icon="users" class="menu-icon"/>
-            <span class="uk-text-truncate">Grid</span></a>
+            <span class="uk-text-truncate">IPC Example</span></a>
         </li>
       </router-link>
     </ul>

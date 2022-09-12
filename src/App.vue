@@ -16,7 +16,7 @@
 
   <div class="uk-position-relative" uk-height-viewport="offset-top:true; offset-bottom:true;">
     <div class="uk-position-cover uk-grid uk-grid-collapse">
-      <div class="sidebar uk-height-1-1 uk-overflow-auto" style="background: #202021">
+      <div class="sidebar uk-height-1-1 uk-overflow-auto">
         <Navigation />
         <div class="resizer uk-flex uk-flex-middle uk-flex-center">
           <font-awesome-icon icon="grip-lines-vertical" />

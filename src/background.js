@@ -93,16 +93,12 @@ if (isDevelopment) {
 }
 
 // ipc
-ipcMain.handle('getPlayers', (e, arg) => {
+ipcMain.handle('inOut', (e, arg) => {
+    console.log('Received from Fronted: ' + arg);
     // DB Logic
-    // const p = new Player.Builder().setFirstname("Marco").setLastname("Rensch").setColor("red")
-    const players = [
-        {firstname:"Lewis", lastname:"Hamilton", color:"grey"},
-        {firstname:"Max", lastname:"Verstappen", color:"blue"},
-        {firstname:"Valtteri", lastname:"Bottas", color:"green"},
-        {firstname:"Lando", lastname:"Norris", color:"yellow"},
-        {firstname:"Charles", lastname:"Leclerc", color:"orange"},
-        {firstname:"Carlos", lastname:"Sainz", color:"black"},
-    ];
-    return players;
+    return 'BAR';
+});
+
+ipcMain.handle('calculate', (e, arg) => {
+   return parseInt(arg.n1) + parseInt(arg.n2);
 });
